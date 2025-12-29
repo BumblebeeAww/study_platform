@@ -9,7 +9,6 @@
 - PostgreSQL
 - Maven
 - Docker & Docker Compose
-- GitHub Actions (CI/CD)
 
 ## Структура проекта
 - `controller/` — REST контроллеры для API.
@@ -56,7 +55,3 @@
 - Интеграционные тесты: `mvn test` (используют H2 в памяти для тестов, но можно настроить PostgreSQL в `application-test.properties`).
 - Покрытие: CRUD, каскадное сохранение, lazy loading (включая тест на LazyInitializationException).
 - Тесты запускаются автоматически в CI/CD.
-
-## CI/CD
-- GitHub Actions: Автоматический запуск тестов на push/PR, сборка образа Docker и push в Docker Hub.
-- Проверка кода: Используется Spotless для форматирования Java кода.
